@@ -1,0 +1,362 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://scripts/Level_02.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sprites/levels/tiles_spritesheet.png" type="Texture" id=3]
+[ext_resource path="res://scenes/Flag.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Coin.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/Area2D.gd" type="Script" id=6]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 0, 70, 0, 70, 70, 0, 70 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 70, 0, 70, 70, 0, 70 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 70, 0, 70, 70, 0, 70 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 70, 0, 70, 70, 0, 70 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 70, 0, 70, 70, 0, 70 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 70, 0, 70, 70, 0, 70 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 70, 0, 70, 70, 0, 70 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 0, 70, 0, 70, 70, 0, 70 )
+
+[sub_resource type="TileSet" id=9]
+0/name = "tiles_spritesheet.png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 792, 216, 70, 70 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "tiles_spritesheet.png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 792, 144, 70, 70 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "tiles_spritesheet.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 792, 72, 70, 70 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "tiles_spritesheet.png 3"
+3/texture = ExtResource( 3 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 288, 792, 70, 70 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "tiles_spritesheet.png 4"
+4/texture = ExtResource( 3 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 792, 360, 70, 70 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+6/name = "tiles_spritesheet.png 6"
+6/texture = ExtResource( 3 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 432, 720, 70, 70 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "tiles_spritesheet.png 7"
+7/texture = ExtResource( 3 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 648, 648, 70, 70 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
+8/name = "tiles_spritesheet.png 8"
+8/texture = ExtResource( 3 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 792, 648, 70, 70 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+8/z_index = 0
+9/name = "tiles_spritesheet.png 9"
+9/texture = ExtResource( 3 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 504, 288, 70, 70 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shapes = [  ]
+9/z_index = 0
+10/name = "tiles_spritesheet.png 10"
+10/texture = ExtResource( 3 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 432, 792, 70, 70 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shapes = [  ]
+10/z_index = 0
+11/name = "tiles_spritesheet.png 11"
+11/texture = ExtResource( 3 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 504, 0, 70, 70 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shapes = [  ]
+11/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 237.983, 48.0903 )
+
+[node name="Level 02" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 150, 540 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 9 )
+cell_size = Vector2( 69, 69 )
+format = 1
+tile_data = PoolIntArray( 393213, 1, 0, 393214, 1, 0, 393215, 1, 0, 458749, 9, 0, 458750, 9, 0, 458751, 9, 0, 393250, 6, 0, 393251, 7, 0, 393252, 8, 0, 524285, 9, 0, 524286, 9, 0, 524287, 9, 0, 458763, 1, 0, 458764, 1, 0, 458765, 1, 0, 458766, 1, 0, 458767, 1, 0, 458772, 1, 0, 458773, 1, 0, 458774, 1, 0, 458775, 1, 0, 458781, 1, 0, 458782, 1, 0, 458783, 1, 0, 589821, 9, 0, 589822, 9, 0, 589823, 9, 0, 524299, 9, 0, 524300, 9, 0, 524301, 9, 0, 524302, 9, 0, 524303, 9, 0, 524304, 10, 0, 524305, 10, 0, 524306, 10, 0, 524307, 10, 0, 524308, 9, 0, 524309, 9, 0, 524310, 9, 0, 524311, 9, 0, 524312, 10, 0, 524313, 10, 0, 524314, 10, 0, 524315, 10, 0, 524316, 10, 0, 524317, 9, 0, 524318, 9, 0, 524319, 9, 0, 524328, 6, 0, 524329, 7, 0, 524330, 8, 0, 655357, 9, 0, 655358, 9, 0, 655359, 9, 0, 589824, 1, 0, 589825, 1, 0, 589826, 1, 0, 589827, 1, 0, 589828, 1, 0, 589829, 1, 0, 589830, 1, 0, 589831, 1, 0, 589835, 9, 0, 589836, 9, 0, 589837, 9, 0, 589838, 9, 0, 589839, 9, 0, 589840, 11, 0, 589841, 11, 0, 589842, 11, 0, 589843, 11, 0, 589844, 9, 0, 589845, 9, 0, 589846, 9, 0, 589847, 9, 0, 589848, 11, 0, 589849, 11, 0, 589850, 11, 0, 589851, 11, 0, 589852, 11, 0, 589853, 9, 0, 589854, 9, 0, 589855, 9, 0, 720893, 9, 0, 720894, 9, 0, 720895, 9, 0, 655360, 9, 0, 655361, 9, 0, 655362, 9, 0, 655363, 9, 0, 655364, 9, 0, 655365, 9, 0, 655366, 9, 0, 655367, 9, 0, 655368, 1, 0, 655369, 1, 0, 655370, 1, 0, 655371, 9, 0, 655372, 9, 0, 655373, 9, 0, 655374, 9, 0, 655375, 9, 0, 655376, 11, 0, 655377, 11, 0, 655378, 11, 0, 655379, 11, 0, 655380, 9, 0, 655381, 9, 0, 655382, 9, 0, 655383, 9, 0, 655384, 11, 0, 655385, 11, 0, 655386, 11, 0, 655387, 11, 0, 655388, 11, 0, 655389, 9, 0, 655390, 9, 0, 655391, 9, 0, 655405, 6, 0, 655406, 8, 0, 655411, 1, 0, 655412, 1, 0, 655413, 1, 0, 655414, 1, 0, 655415, 1, 0, 786429, 9, 0, 786430, 9, 0, 786431, 9, 0, 720896, 9, 0, 720897, 9, 0, 720898, 9, 0, 720899, 9, 0, 720900, 9, 0, 720901, 9, 0, 720902, 9, 0, 720903, 9, 0, 720904, 9, 0, 720905, 9, 0, 720906, 9, 0, 720907, 9, 0, 720908, 9, 0, 720909, 9, 0, 720910, 9, 0, 720911, 9, 0, 720912, 11, 0, 720913, 11, 0, 720914, 11, 0, 720915, 11, 0, 720916, 9, 0, 720917, 9, 0, 720918, 9, 0, 720919, 9, 0, 720920, 11, 0, 720921, 11, 0, 720922, 11, 0, 720923, 11, 0, 720924, 11, 0, 720925, 9, 0, 720926, 9, 0, 720927, 9, 0, 720928, 10, 0, 720929, 10, 0, 720930, 10, 0, 720931, 10, 0, 720932, 10, 0, 720933, 10, 0, 720934, 10, 0, 720935, 10, 0, 720936, 10, 0, 720937, 10, 0, 720938, 10, 0, 720939, 10, 0, 720940, 10, 0, 720941, 10, 0, 720942, 10, 0, 720943, 10, 0, 720944, 10, 0, 720945, 10, 0, 720946, 10, 0, 720947, 9, 0, 720948, 9, 0, 720949, 9, 0, 720950, 9, 0, 720951, 9, 0, 851965, 9, 0, 851966, 9, 0, 851967, 9, 0, 786432, 9, 0, 786433, 9, 0, 786434, 9, 0, 786435, 9, 0, 786436, 9, 0, 786437, 9, 0, 786438, 9, 0, 786439, 9, 0, 786440, 9, 0, 786441, 9, 0, 786442, 9, 0, 786443, 9, 0, 786444, 9, 0, 786445, 9, 0, 786446, 9, 0, 786447, 9, 0, 786448, 11, 0, 786449, 11, 0, 786450, 11, 0, 786451, 11, 0, 786452, 9, 0, 786453, 9, 0, 786454, 9, 0, 786455, 9, 0, 786456, 11, 0, 786457, 11, 0, 786458, 11, 0, 786459, 11, 0, 786460, 11, 0, 786461, 9, 0, 786462, 9, 0, 786463, 9, 0, 786464, 11, 0, 786465, 11, 0, 786466, 11, 0, 786467, 11, 0, 786468, 11, 0, 786469, 11, 0, 786470, 11, 0, 786471, 11, 0, 786472, 11, 0, 786473, 11, 0, 786474, 11, 0, 786475, 11, 0, 786476, 11, 0, 786477, 11, 0, 786478, 11, 0, 786479, 11, 0, 786480, 11, 0, 786481, 11, 0, 786482, 11, 0, 786483, 9, 0, 786484, 9, 0, 786485, 9, 0, 786486, 9, 0, 786487, 9, 0 )
+
+[node name="Flag" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3717.65, 654.992 )
+nextLevel = "res://scenes/Level_03.tscn"
+
+[node name="Coins" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Coin" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 540.156, 554.584 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 601.513, 502.127 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 673.11, 500.765 )
+
+[node name="Coin4" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 726.264, 438.34 )
+
+[node name="Coin5" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2610.51, 346.941 )
+
+[node name="Coin6" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2688.67, 298.753 )
+
+[node name="Coin8" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2829.62, 436.875 )
+
+[node name="Coin9" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2846.66, 514.83 )
+
+[node name="Coin16" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 3242.73, 643.472 )
+
+[node name="Coin17" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 3334.69, 581.422 )
+
+[node name="Coin18" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 3507.55, 564.802 )
+
+[node name="Coin20" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 3406.72, 637.932 )
+
+[node name="Coin7" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2779.08, 363.116 )
+
+[node name="Coin10" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1632.28, 429.296 )
+
+[node name="Coin11" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1817.17, 427.795 )
+
+[node name="Coin12" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2062.35, 431.042 )
+
+[node name="Coin13" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1899.43, 353.527 )
+
+[node name="Coin14" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1996.88, 352.933 )
+
+[node name="Coin15" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 1720.41, 373.744 )
+
+[node name="Lava" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Area2D" type="Area2D" parent="Lava"]
+editor/display_folded = true
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lava/Area2D"]
+position = Vector2( 1841.73, 632.734 )
+shape = SubResource( 10 )
+
+[node name="Area2D3" type="Area2D" parent="Lava"]
+editor/display_folded = true
+position = Vector2( 592.579, 206.682 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lava/Area2D3"]
+position = Vector2( 1841.73, 632.734 )
+shape = SubResource( 10 )
+
+[node name="Area2D4" type="Area2D" parent="Lava"]
+editor/display_folded = true
+position = Vector2( 1024.95, 207.121 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lava/Area2D4"]
+position = Vector2( 1841.73, 632.734 )
+shape = SubResource( 10 )
+
+[node name="Area2D5" type="Area2D" parent="Lava"]
+editor/display_folded = true
+position = Vector2( 1467.9, 206.919 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lava/Area2D5"]
+position = Vector2( 1841.73, 632.734 )
+shape = SubResource( 10 )
+
+[node name="Area2D2" type="Area2D" parent="Lava"]
+editor/display_folded = true
+position = Vector2( -592.427, 0.0302124 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lava/Area2D2"]
+position = Vector2( 1841.73, 632.734 )
+shape = SubResource( 10 )
+[connection signal="coin_collected" from="Coins/Coin" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin2" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin3" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin4" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin5" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin6" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin8" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin9" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin16" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin17" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin18" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin20" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin7" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin10" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin11" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin12" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin13" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin14" to="." method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin15" to="." method="_on_Coin_coin_collected"]
+[connection signal="body_entered" from="Lava/Area2D" to="Lava/Area2D" method="_on_Area2D_body_entered"]
+[connection signal="lava_touched" from="Lava/Area2D" to="." method="_on_Area2D_lava_touched"]
+[connection signal="body_entered" from="Lava/Area2D3" to="Lava/Area2D3" method="_on_Area2D_body_entered"]
+[connection signal="lava_touched" from="Lava/Area2D3" to="." method="_on_Area2D_lava_touched"]
+[connection signal="body_entered" from="Lava/Area2D4" to="Lava/Area2D4" method="_on_Area2D_body_entered"]
+[connection signal="lava_touched" from="Lava/Area2D4" to="." method="_on_Area2D_lava_touched"]
+[connection signal="body_entered" from="Lava/Area2D5" to="Lava/Area2D5" method="_on_Area2D_body_entered"]
+[connection signal="lava_touched" from="Lava/Area2D5" to="." method="_on_Area2D_lava_touched"]
+[connection signal="body_entered" from="Lava/Area2D2" to="Lava/Area2D2" method="_on_Area2D_body_entered"]
+[connection signal="lava_touched" from="Lava/Area2D2" to="." method="_on_Area2D_lava_touched"]

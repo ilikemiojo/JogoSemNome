@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Defeat.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Button.tscn" type="PackedScene" id=2]
+
+[node name="Defeat" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.000118852
+margin_top = 1.22772
+margin_right = 0.00012207
+margin_bottom = 1.22772
+script = ExtResource( 1 )
+newGame = "res://scenes/Level_01.tscn"
+
+[node name="You Died" type="Label" parent="."]
+margin_left = 214.853
+margin_top = 169.428
+margin_right = 508.853
+margin_bottom = 217.428
+rect_scale = Vector2( 3, 3 )
+text = "Você morreu!
+
+Mas nem tudo está perdido... Só você"
+align = 1
+
+[node name="Try Again" parent="." instance=ExtResource( 2 )]
+margin_left = 534.659
+margin_top = 411.985
+margin_right = 662.659
+margin_bottom = 435.985
+text = "Tentar novamente"
+
+[node name="Quit" parent="." instance=ExtResource( 2 )]
+margin_left = 600.956
+margin_top = 497.926
+margin_right = 660.956
+margin_bottom = 521.926
+text = "Sair"
+[connection signal="pressed" from="Try Again" to="." method="_on_Try_Again_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
